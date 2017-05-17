@@ -1,0 +1,136 @@
+body{
+	background: linear-gradient(to top, #E63B17, #9A4D3D, #7B1904, #F67C62, #F6AC9C) 100% 100% no-repeat;     background-size: 100%;
+	background-attachment: fixed;
+	width: 100%;
+	text-align: center;
+}
+p{
+	margin: 30px !important;
+	padding: 20px !important;
+}
+h1{
+	font-size: 36px !important;
+	color: #009999 ;
+}
+h2{
+	font-size: 24px !important;
+	color: #33CCCC;
+}
+a{
+	color: black;
+}
+nav {
+	background-color: ##009999;
+	position: relative;
+	color: #fff;
+	font-weight: 200;
+	box-shadow: 0 0 10px black;
+	}
+nav ul {
+	margin-bottom: 10px; 
+	padding: 0;
+}
+nav li {
+	position: relative;	
+	cursor: pointer;
+	list-style: none;
+}
+nav li:hover {
+	background-color: red;
+	text-shadow: 0 10px 10px #222;
+	border-top: 1px #33CCCC solid;
+}
+nav ul li {
+	display: inline-table;
+	padding: .3em 1em;
+}
+nav ul li.active{
+	background-color: red;
+	text-shadow: 0 10px 10px #222;
+	border-top: 1px #33CCCC solid;
+}
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+i {
+font-family: fontawesome !important;
+}
+footer a{
+	position: right !important;
+}
+.slideshow-container{
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	display:inline-block;
+}
+.prev, .next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color:white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev{
+	left: 0;
+}
+.prev:hover, next:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+.dot{
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color:0.6s ease;
+}
+.active, dot:hover{
+	background-color: #717171;
+}
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration:1.5s;
+	animation-name:fade;
+	animation-duration:1.5s;
+	width:60%;
+}
+mySlides fade{
+	width:60%;
+}
+/*@-webkit-keyframes fade{
+	0%{opacity:.4;}
+	100%{opacity:1;}
+}*/
+@keyframes fade{
+	0%{opacity:.4;}
+	100%{opacity:1;}
+}
+ul.photo{
+	width:9999px;
+	margin-top:100px;
+}
+li.photo{
+	float:left;
+}
+li.photo:first-child{
+	margin-right: 150px;
+    margin-left: 70px;
+}
+li.photo:nth-child(2){
+	margin-right: 150px;
+}
+img.photo{
+	display:block;
+}

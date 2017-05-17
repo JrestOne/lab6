@@ -1,0 +1,16 @@
+@media print {
+nav, footer{
+	display:none;
+}
+body{
+	background: none;
+	padding: 50px;
+        font-family: "Times New Roman";
+}
+nav{
+	background-color: none;
+}
+a:after {
+	content:"<"attr(href)">";
+}
+}
